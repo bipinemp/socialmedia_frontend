@@ -28,7 +28,7 @@ const Page = () => {
         setCredentials(res.data);
         setLoginInfo({ email: "", password: "" });
 
-        router.push("/");
+        router.refresh();
       }
     } catch (error) {
       alert(error?.data?.message);
