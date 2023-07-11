@@ -99,7 +99,7 @@ const Page = () => {
           disabled={isLoading}
           className="bg-primary text-mode-extralight  py-3 rounded-md font-bold tracking-normal focus:outline-secondary"
         >
-          {isLoading ? "..." : "Register&apos;"}
+          {isLoading ? "..." : "Register"}
         </button>
       </form>
       <p className="flex gap-1">
