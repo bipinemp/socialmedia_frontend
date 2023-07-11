@@ -20,14 +20,12 @@ const Page = () => {
     e.preventDefault();
     try {
       const res = await login(loginInfo);
-      console.log(res);
       if (res.error) {
         alert(res.error?.data?.message);
       }
       if (res.data.status === 201) {
         setCredentials(res.data);
         setLoginInfo({ email: "", password: "" });
-
         router.refresh();
       }
     } catch (error) {
