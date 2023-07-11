@@ -23,7 +23,7 @@ const Page = () => {
       if (res.error) {
         alert(res.error?.data?.message);
       }
-      if (res.data.status === 201) {
+      if (res.data?.status === 201) {
         setCredentials(res.data);
         setLoginInfo({ email: "", password: "" });
         router.refresh();
