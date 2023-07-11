@@ -68,8 +68,8 @@ const Page = () => {
           {isLoading ? "..." : "Login"}
         </button>
       </form>
-      <p>
-        Doesn't have Account?&nbsp;{" "}
+      <p className="flex gap-1">
+        Doesn't have Account?
         <Link href="/register" className="text-secondary underline">
           Register here
         </Link>
