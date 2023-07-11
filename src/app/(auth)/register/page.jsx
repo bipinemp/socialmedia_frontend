@@ -102,8 +102,8 @@ const Page = () => {
           {isLoading ? "..." : "Register"}
         </button>
       </form>
-      <p>
-        Already have Account?&nbsp;{" "}
+      <p className="flex gap-1">
+        Already have Account?
         <Link href="/login" className="text-secondary underline">
           Login here
         </Link>
