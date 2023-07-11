@@ -14,6 +14,11 @@ const nextConfig = {
         hostname: "res.cloudinary.com",
         port: "",
         pathname: "/bipinbhandari/**",
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
+          "Access-Control-Allow-Headers": "Content-Type, Authorization",
+        },
       },
     ],
   },
