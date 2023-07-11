@@ -23,7 +23,7 @@ const Page = () => {
       if (res.error) {
         alert(res.error?.data?.message);
       }
-      if (res.data.status === 201) {
+      if (res.data?.status === 201) {
         setRegisterInfo({ username: "", email: "", password: "", bio: "" });
         router.push("/login");
       }
@@ -102,8 +102,8 @@ const Page = () => {
           {isLoading ? "..." : "Register"}
         </button>
       </form>
-      <p className="flex gap-1">
-        Already have Account?
+      <p>
+        Already have Account?&nbsp;
         <Link href="/login" className="text-secondary underline">
           Login here
         </Link>
