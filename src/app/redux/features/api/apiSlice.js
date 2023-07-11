@@ -5,7 +5,7 @@ const BASE_URL = process.env.BASE_AUTH_URL;
 export const apiSlice = createApi({
   reducerPath: "userapi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://socialmediafrontendapp.vercel.app",
+    baseUrl: BASE_URL,
     credentials: "include",
   }),
   tagTypes: ["user"],

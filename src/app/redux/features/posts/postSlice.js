@@ -5,7 +5,7 @@ const BASE_URL = process.env.BASE_POSTS_URL;
 export const postSlice = createApi({
   reducerPath: "postapi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://socialmediafrontendapp.vercel.app",
+    baseUrl: BASE_URL,
     credentials: "include",
   }),
   tagTypes: ["post"],
