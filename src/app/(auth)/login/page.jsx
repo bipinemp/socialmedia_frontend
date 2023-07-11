@@ -65,7 +65,7 @@ const Page = () => {
           type="submit"
           className="bg-primary text-mode-extralight  py-3 rounded-md font-bold tracking-normal focus:outline-secondary"
         >
-          {isLoading ? "..." : "Login"}
+          {isLoading ? "..." : "Login&apos;"}
         </button>
       </form>
       <p className="flex gap-1">
